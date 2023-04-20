@@ -1,0 +1,84 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 10vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  min-height: 10vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 1em;
+}
+
+
+
+.meme-generator {
+  background-color: #282c34;
+  min-height: 90vh;
+  padding: 2rem 0;
+  span {
+    color: #fff;
+    font-size: 24px;
+  }
+  .form {
+    width: 40%;
+    margin: auto;
+  .input-container {
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    border: 1px solid #bbb;
+    margin: 1rem 0;
+    height: 35px;
+    label {
+      color: #282c34;
+      background-color: #eee;
+      font-weight: bold;
+      border-right: 1px solid #333;
+      padding: .5rem 1rem;
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+      width: 30%;
+    }
+    input {
+      padding: .5rem 1rem;
+      border: none;
+      background-color: #fff;
+      color: #111;
+      flex-grow: 1;
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+      :focus{
+        outline: none ;
+      }
+    }
+    label#mirror {
+      width: 50%;
+    }
+    input#text-color {
+      padding: 0;
+      height: 100%;
+    }
+  }
+}
+button {
+  background-color: #61dafb;
+  padding: 1rem 2rem;
+  font-size: 1.5em;
+  font-weight: 600;
+  border: 1px solid #333;
+  border-radius: 10px;
+}
+@media screen and (max-width: 764px) {
+  .form {
+    width: 90%;
+  }
+}
+
+}
